@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+.dim-layer .dimBg {
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+#loadPopUp {
+	position:fixed; 
+	left:50%; 
+	top:50%; 
+	transform:translate(-50%, -50%); 
+	width:40px; height:40px; 
+	border:10px solid #ffffff; 
+	border-top:10px solid #37b37f; 
+	border-radius:50em;
+	z-index: 120;
+	/* 로딩 원 돌리는 애니메이션 */
+	animation-name:spinCircle;
+    animation-duration:.8s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes spinCircle {
+    from {
+        transform:translate(-50%, -50%) rotate(0);
+    }
+    to {
+        transform:translate(-50%, -50%) rotate(360deg);
+    }
+}

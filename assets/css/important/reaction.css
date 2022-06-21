@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+#layerInner{z-index: 500;}
+
+
+/* footer 레이아웃 */
+#footer {
+	padding-left: 4em;
+	padding-right: 4em;
+}
+
+.foot_li { margin-bottom: 0.5em !important; }
+
+/* loginForm css */
+#loginText1 >a{font-size:0.8em; color:#292929; text-decoration: none;}
+#loginText2 >a{font-size:1.2em; text-decoration: none;}
+
+#loginText1 >a:hover {text-decoration: underline;}
+#loginText2 >a:hover {text-decoration: underline;}
+
+/* joinForm css */
+#joinFrm{width:80%; margin:0 auto;}
+#member_id, #member_email {width:70%; float:left;}
+#joinFrmSend {margin-top:25px;}
+
+.col-12 >a { float:right; padding: 0 1.5em; margin-right: 1em;}
+
+/* 친구 프로필 & 내 프로필 */
+#profileMain .box {
+	width: 9em;
+	height: 9em;
+	border-radius: 70%;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+}
+
+#profileMain .profile {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#profileMain ul.icons li {
+	margin-left: 4em;
+	margin-right: 4em,;
+}
+
+#profileMain p {
+	margin: 0 0 1em 0;
+}
+
+#profileMain #btn1 {
+	padding: 0 0.7em;
+	height: 2.5em;
+	line-height: 2.5em;
+	letter-spacing: 0.25em;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*내 프로필에만 적용되어있던 디자인 */
+.myProfileSet {
+	list-style-type:none;
+	overflow: auto;
+	height: 100%;
+}
+
+.myProfileSet>a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 8px 15px 8px 15px;
+}
+/* 내 프로필 수정 페이지 */
+#profileMain {width:30em; display:inline-block;}
+#profileFrm {border-left:1px solid black; padding-left:3em;}
+
+li>a.changeProfilePage {
+	border-left: 4px solid black;
+	text-decoration:none;
+	color: black;
+}
+a.changeProfilePage :hover{ 
+	text-decoration:underline;
+	color: #66CDAA;
+}
+
+
+/* post mode에서 주소를 띄워주는 영역 */
+.bAddr { padding-left: 5px;	padding-right: 5px;	font-size: 0.8em; } 
+
+#board_title{resize: none; margin-bottom: 2em; 
+	height: 3em;  
+	width: -webkit-fill-available;
+    border-color: #37b37f;
+    border-radius: 5px;}
+#reSeledtFrm {text-align: right; margin: 0;}
+
+/* 에디터 css */
+.note-modal-content { margin: 15em auto; }
+.note-modal-footer { padding: 0 2em 0 0; margin-top: 2em; }
+div.half-Area {display: inline-block; width: 25em; margin-top: 2em; margin-left: 1.5em;}
+@media screen and (min-width: 1680px){div.half-Area{width: 28em;}}
+
+/* 반응형 디자인 레이아웃 css 파일*/
+#reSelect{ font-size: 0.8em; margin: 0.5em 0 0.5em 0; }
+#addrFrm{ padding-top: 5em; }
+#editerLogo{padding-top: 3em;}
+@media screen and (max-width: 1280px){ #editerLogo{padding-top: 1.5em;} #addrFrm{padding-top: 6.5em;}}
+@media screen and (max-width: 980px){ #editerLogo{padding-top: 1.5em;} #addrFrm{padding-top: 6.5em;}}

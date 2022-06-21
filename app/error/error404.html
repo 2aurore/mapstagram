@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devise-width">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/main.css" />
+<style>
+*{ margin: 0; padding: 0;}
+
+#error404_black{
+	
+	position: absolute;
+	z-index: -1;
+}
+
+div {
+	text-align:center;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
+}
+h1 {font-family: 'Titillium Web', sans-serif; font-size: xx-large;}
+p {font-family: 'Gothic A1', sans-serif; margin: 0 0 1em 0; font-size: large;}
+</style>
+</head>
+<body>
+	<div>
+		<img id="page404" alt="" src="../../images/logos/error/error404_black.png" width="100%" style="opacity: 0.5 !important;">
+		<h1>SORRY! We are working on this page</h1>
+		<p>페이지 연결에 실패하였습니다. 잠시 후 다시 이용해주세요.</p>
+		<!-- 
+			페이지 분기 처리가 필요 로그인 상태일 경우 로그인 유지 상태로 boardMapPage.html 이동
+			그렇지 않을 경우 로그인 페이지로 이동
+		 -->
+		<a href="../../LoginForm.jsp" class="button">Back to Homepage</a>
+	</div>
+
+
+</body>
+</html>
+

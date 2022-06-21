@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+	Gravity by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Treat Trip</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/important/reaction.css" />
+	</head>
+	<body class="is-preload">
+
+	<!-- @media screen and 반응형으로 코드 짤것!!!!!!!!!!!!!!!!!!!!!!! -->	
+
+		<!-- Header -->
+	<div id="header">
+		<h1 id="logo">
+			<a href="boardMapPage.html">Treat Trip</a>
+		</h1>
+		<p>
+			<img alt="" src="../../../../images/logos/linkedin_banner_image_1.png">
+		</p>
+		<nav id="nav">
+			<ul>
+				<li><a href="boardMapPage.html">Home</a></li>
+				<li><a href="#">Mode</a>
+					<ul>
+						<li><a href="javascript:mapAroundMode()">Around</a></li>
+						<li><a href="javascript:mapSearchMode()">Search</a></li>
+						<li><a href="javascript:mapPostingMode()">Posting</a></li>
+					</ul></li>
+				<li><a href="#" class="button alt">My Page</a></li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<!-- around 영역 -->
+	<section id="main">
+		
+	
+		<div class="container">
+		
+			<!-- search 버튼 -->	
+			<div class="col-12" style="vertical-align:middle">
+				<div style="float:left">
+				<img src="../../../images/logo.png" width=450 height=170>
+				</div>
+				<div style="float:left">
+				<input type="text" name="search" id="search" placeholder="search">
+				</div>
+				<div style="float:left">
+				<a href="#" class="button alt small" style="margin-left:10px">SEARCH</a>
+				</div>
+
+			</div>
+			<br><br><br><br><br>
+			<!-- br 쓰지 말고!!!!!!!!!!!!! margin padding 사용해서 간격 조정할것. -->
+			<br>
+			
+			<!-- 이미지 -->
+			<div id="image" style="margin:0 auto">
+				<img src="../../../images/logos/logo_transparent.png" width=300 height=300>
+				<img src="../../../images/logos/logo_transparent.png" width=300 height=300>
+				<img src="../../../images/logos/logo_transparent.png" width=300 height=300>
+				<img src="../../../images/logos/logo_transparent.png" width=300 height=300>
+				<img src="../../../images/logos/logo_transparent.png" width=300 height=300>
+				<img src="../../../images/logos/logo_transparent.png" width=300 height=300>
+			
+			</div>	
+				
+						
+		</div>
+
+	</section>	
+	<!-- Footer -->
+	<div id="footer"></div>
+	
+	<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../../../assets/js/jquery.poptrox.min.js"></script>
+			<script src="../../../assets/js/browser.min.js"></script>
+			<script src="../../../assets/js/breakpoints.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<script src="../../../assets/js/main.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("#footer").load("../footer.html");
+		})
+	</script>
+		
+	</body>
+</html>

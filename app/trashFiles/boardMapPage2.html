@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+	Gravity by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<!-- 친구 게시글이 등록된 핀을 생성할 지도 페이지 -->
+<html>
+	<head>
+		<title>Untitled</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	
+		<style>
+			.bAddr {
+				padding-left: 5px;
+				padding-right: 5px;
+				font-size: 0.8em;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+	<div id="header" data-include="header">
+	</div>
+
+	<!-- 지도 영역 -->
+	<div class="container">
+		<div id="explain" style="width:90%; margin-left: 5%; margin-right: 5%; text-align: center; padding-top: 3px; padding-bottom: 3px;">
+			<!-- post 페이지 설명 -->
+			<div id="locationAddress" style=" height: 2em; display: inline-block;">
+				게시글을 작성하고 싶은 장소를 지도에서 선택한 다음 POST 버튼을 클릭하세요! &nbsp;&nbsp;
+				<!-- 게시글 포스팅 버튼 -->
+				<a href="#" class="button primary small" id="postBtn" style="font-size: .5em; position: absolute;">post</a>
+			</div>
+		</div>
+		
+		<div id="map" style="width:auto;  height: 60em; margin-bottom: 1em;"></div>
+		<!-- 클릭한 위치에 마커 생성 -->
+		<div id="clickLatlng"></div>
+	</div>
+
+	<!-- Footer -->
+	<div id="footer" data-include="footer">	</div>
+
+
+	<!-- 지도 API scripts -->
+	<script	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cb4dad6fbd5aa76ed4058c995c432933&libraries=services,clusterer,drawing"></script>
+	
+	<script src="../../assets/js/kakao/geolocation.js"></script>
+	<script src="../../assets/js/kakao/kakaoMap.js"></script>
+
+	<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+	
+	<!-- 지도 위치 로딩 스크립트 순서 지정 -->
+	<script src="../../assets/js/kakao/mapSequence.js"></script>
+	<script>
+		mapSequence();
+	
+		/* 분리한 header.html와 footer.html을 연결하는 func */
+		$(function() {
+			var includes = $('[data-include]');
+			jQuery.each(includes, function() {
+				var file = $(this).data('include') + '.html';
+				$(this).load(file);
+			});
+		});
+	</script>
+		
+	<!--기본 Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../../assets/js/jquery.poptrox.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+		
+	</body>
+</html>
